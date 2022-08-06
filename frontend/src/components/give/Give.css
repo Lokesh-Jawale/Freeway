@@ -1,0 +1,97 @@
+.give {
+    background: linear-gradient(to right bottom, rgba(253, 253, 253, 0.05), rgba(0, 255, 255, 0.1)) !important;
+    padding: 2em 0 !important;
+    /* border: 1px solid rgba(180, 223, 238, 0.7); */
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgb(90, 131, 129);
+    margin: 4em auto 4em auto;
+    width: 90%;
+}
+
+.give__donateHeader{
+    text-align: center;
+    margin-top: 1em;
+    color: rgba(17, 0, 114, 0.87);
+    font-weight: bolder;
+}
+
+
+/* Give form Container */
+.give__formContainer {
+    padding: 1em;
+}
+
+/* give form inputs */
+.give__form__labels {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.give__form__inputs {
+    border-radius: 20px !important;
+    background-color: rgba(255, 255, 255, 0.7) !important;    
+}
+
+.give__form__inputsImage {
+    border-radius: 20px 0 0 20px !important;
+    background-color: rgba(255, 255, 255, 0.7) !important;    
+}
+
+.give__form__inputsUploadButton {
+    border-radius: 0 20px 20px 0 !important;
+}
+
+.give__form__submit {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.terms {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.give__form__submit p {
+    font-size: 1rem;
+    color: rgb(255, 0, 0);
+    text-shadow: 0px 0 5px rgb(255, 255, 255);
+}
+
+.give__form__agree {
+    height:fit-content;
+    margin-right: 0.2em;
+    border: rgba(128, 128, 128, 0.637);
+}
+
+.tnc {
+    color: blue;
+    border-bottom: 1px solid;
+}
+
+.tnc:hover {
+    color: rgb(60, 81, 202);
+    cursor:pointer;
+}
+
+.donateButton {
+    /* box-shadow: 0 0 25px rgb(0, 40, 92); */
+    margin-top: 1em;
+}
+
+@media(min-width: 720px){
+    .give {
+        border-radius: 50px;
+        box-shadow: 0 0 20px rgb(90, 131, 129);
+        width: 80%;
+    }
+
+    .give__formContainer {
+        padding: 2em;
+    }
+
+    /* .give__formRow {
+        display: flex !important;
+        justify-content:flex-start !important;
+        align-items: center;
+    } */
+}

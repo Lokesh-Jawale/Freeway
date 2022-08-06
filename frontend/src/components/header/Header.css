@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+/* Brand logo and top content */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center !important;
+    padding: 1em 1em 0 1em;
+}
+
+/* logo */
+.header__logo {
+    text-decoration: none;
+}
+
+.header__logo a {
+    text-decoration: none;
+    font-family: 'Quintessential';
+}
+
+.header__logo a:hover {
+    color: rgba(54, 105, 180, 0.89);
+    font-size: 3rem;
+}
+
+.header__logo a span {
+    color: rgba(54, 105, 180, 0.89);
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.header__logo a .header__logo__first{
+    text-decoration: none;
+    color: rgba(27, 32, 48, 0.849);
+    font-size: 3rem;
+}
+
+
+/* login|signup links */
+.inactive, .dropbtn {
+    font-size: 1.2rem;
+    color: rgb(110, 110, 110);
+    margin-top: 1em;
+    text-decoration: none;
+    /* border: 1px solid blue; */
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* For active NavLinks */
+.active, .inactive:hover, .dropbtn:hover, .dropbtn:active {
+    color: rgba(218, 218, 218, 0.911);
+}
+
+.header__nav__links {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.95);
+    right: 0;
+    padding: 20px;
+    flex-direction: column;
+    transition: all .5s ease-in-out;
+    z-index: 9;
+    top: 120px;
+}
+
+.header__nav__links li {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.checkbtn {
+    float: right;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 5px;
+    display: block;
+}
+
+.checkbtn:active, .checkbtn:hover {
+    box-shadow: 0 0 1px blue;
+}
+
+.header__nav__links.close {
+    background-color: rgba(0, 0, 0, 0.4);
+    right: 100% !important;
+}
+
+
+/* DropDown */
+.dropdown-content {
+    /* background-color: rgba(0, 0, 0, 0.897); */
+    height: fit-content;
+    font-size: 1.2rem;
+    width: 100%;
+    color: rgb(110, 110, 110);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+    border: 1px solid grey;
+    transition: all .5s ease-in-out;
+    z-index: 9;
+    right: 0;
+    top: 1em;
+    position: relative;
+}
+
+.dropdown-content a {
+    width: 90%;
+    margin-top: 0.5em;
+    border-bottom: 1px solid rgba(66, 66, 66, 0.582);
+}
+
+.dropdown-content a:last-child {
+    margin-bottom: 0.5em;
+    border-bottom: none;
+}
+
+.dropdown-content a:hover, a:active{
+    color: rgba(218, 218, 218, 0.911) !important;
+}
+
+.dropdown-content.close {
+    right: 200%;
+    height: 0;
+}
+
+@media(min-width: 450px){
+    .header{
+        padding: 1em 2em 0 2em;
+    }
+}
+
+@media(min-width: 730px){
+    .header{
+        padding: 0 2em;
+        text-align: left;
+    }
+
+    .checkbtn {
+        display: none;
+    }
+
+    .header__nav__links.close, .header__nav__links{
+        align-items: center;
+        position: relative;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0);
+        padding: 20px;
+        top: 0px;
+        right:auto !important;
+    }
+    
+    .header__nav__links li {
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+
+    .inactive, .dropbtn{
+        margin-left: 0.5em;
+        padding: 0.5em 1em;
+        color: rgba(32, 32, 32, 0.8);
+    }
+
+    /* .dropdown-content a{
+        color:rgba(32, 32, 32, 0.8) !important;
+    }
+    
+    .dropdown-content a:hover, a:active{
+        color:rgba(0, 0, 0, 0.9) !important;
+    } */
+
+    .active, .inactive:hover, .dropbtn:hover {
+        border-bottom: 2px solid rgba(128, 128, 128, 0.4);
+        color:rgba(0, 0, 0, 0.9);
+        border-radius: 10px;
+    }
+
+    .dropdown-content, .dropdown-content.close{
+        position: absolute;
+        text-align: center;
+        width: 250px !important;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 20px;
+        top: 50px;
+        right:0 !important;
+    }
+
+    .dropdown-content.close {
+        background-color: thistle;
+        display: none;
+    }
+}
+
+@media(min-width: 900px){
+    .header{
+        padding: 0 4em;
+        text-align: left;
+    }
+}

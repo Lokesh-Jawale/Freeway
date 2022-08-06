@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+.login{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* logo  */
+.login__logo {
+    width: fit-content;
+    text-decoration: none;
+    padding: 10px 10px 20px 10px;
+    margin-bottom: 20px;
+}
+
+.login__logo a {
+    text-decoration: none;
+    font-family: 'Quintessential';
+}
+
+.login__logo a:hover {
+    color: white;
+}
+
+.login__logo a span {
+    color: white;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 3.5rem;
+}
+
+.login__logo a .login__logo__first{
+    text-decoration: none;
+    color: grey;
+    font-size: 3.5rem;
+}
+
+/* login__container  */
+
+.login__container {
+    width: 100%;
+    max-width: 500px;
+    height: fit-content;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: lightblue;
+    border: 10px double rgb(233, 233, 233);
+    padding: 20px;
+}
+
+.login__container h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-decoration-style: dotted;
+}
+
+.login__container form h6 {
+    margin-bottom: 5px;
+}
+
+.login__container p {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.login__formInputs {
+    height: 40px !important;
+    margin-bottom: 20px !important;
+    background-color: lightcyan !important;
+    width: 98%;
+    border-radius:10px;
+    border: 5px double rgb(112, 126, 255, 0.7);
+    border-right: 5px double rgba(0, 0, 255, 0.6);
+    border-top: 5px double rgba(0, 0, 255, 0.6);
+}
+
+.login__signInButton {
+    background-color: #006fd6;
+    color: white;
+    border: 1px solid;
+    border-radius: 3px;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    border-color: #0053a1;
+}
+
+.login__registerButton {
+    background-color: #f0c14b;
+    border: 1px solid;
+    border-radius: 3px;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;;
+}
+

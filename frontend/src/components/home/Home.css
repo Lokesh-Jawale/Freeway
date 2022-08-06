@@ -1,0 +1,180 @@
+.home{
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 5em;
+    font-family: 'Otomanopee One', sans-serif;
+    display: flex;
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)); */
+    /* background-position: right; */
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+    /* background-image: linear-gradient(to right top, rgba(35, 138, 167, 0.1), rgba(87, 255, 174, 0.3)), url(./images/wordcloudworld.jpg); */
+}
+
+/* left */
+.left {
+    padding: 0 1em !important;
+}
+
+/* home content */
+.home h1{
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 3rem;
+    margin: 1.2em 0;
+}
+
+.home h1 span{
+    color: rgba(0, 0, 0, 0.9);
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.6rem;
+    position: relative;
+    margin-bottom: .4em;
+}
+
+.home h1 span::before{
+    content: ' ';
+    position: absolute;
+    width: 3em;
+    background: rgb(149, 255, 232);
+    height: .25em;
+    bottom: 0;
+}
+
+.home p{
+    color: rgba(0, 0, 0, 0.897);
+    margin: 0 1em 1em;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.home__info h5 {
+    color: rgba(0, 0, 0, 0.95);
+    font-weight: bolder;
+    margin-bottom: 0.5em;
+}
+
+.home__info ul{
+    color: rgb(85, 85, 85);
+    text-align: justify;
+    /* text-shadow: 0 0 5px black; */
+    font-size: 0.9rem;
+    padding: 0 3em;
+}
+
+.home__info {
+    margin-bottom: 2em;
+}
+
+/* Give|Browse Buttons*/
+
+.home__buttons {
+    margin-bottom: 1em;
+}
+
+.home__buttons span {
+    font-size: small;
+    margin: 0 0.5em;
+    color: rgb(0, 0, 0);
+}
+
+.Buttons{
+    width: 110px;
+    font-size: smaller !important;
+    margin: 1em 0;
+}
+
+/* right image  */
+.right img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    border-radius: 100px 80px 80px 90px;
+    animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   { opacity: 0.5;}
+    25%  { opacity: 0.6;}
+    50%  { opacity: 0.8;}
+    75%  { opacity: 0.9;}
+    85%   { opacity: 0.8;}
+    95%  { opacity: 0.6;}
+    100%  { opacity: 0.5;}
+}
+
+
+/* responsive ui for tablet or laptop*/
+
+@media(min-width: 500px){
+    .home__buttons span {
+        font-size: large;
+    }
+    .Buttons{
+        width: 155px;
+        height: 50px;
+        font-size: larger !important;
+    }
+}
+
+@media(min-width: 720px){
+    .left {
+        padding: 0 5em !important;
+    }
+
+    .right{
+        text-align: center;
+    }
+
+    .home p{
+        font-size: 1.7rem;
+    }
+
+    /* .right img{
+        width: fit-content;
+        max-height: 500px;
+        max-width: 400px;
+    } */
+
+    .Buttons{
+        margin: 0 0.5em;
+    }
+    
+    .Buttons span{
+        margin: 0.5em 1em 0.5em 1em;
+    }
+}
+
+@media(min-width: 930px){
+    .home {
+        text-align: left;
+    }
+
+    .home__info{
+        margin: 0 0 3em;
+        text-align: left;
+    }
+    
+    .home__info p{
+        text-align: left;
+        margin: 1em 0;
+    }
+
+    .home__info ul {
+        text-align: left;
+    }
+
+}
+
+@media(min-width: 1200px){
+    /* .right img{
+        transform: rotate(-10deg);
+    } */
+
+    .Buttons{
+        margin: 0 1em;
+    }
+}

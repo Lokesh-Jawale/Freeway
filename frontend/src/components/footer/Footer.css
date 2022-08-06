@@ -1,0 +1,15 @@
+/* Bottom */
+.Footer{
+    text-align: center;
+    background-color: rgba(25, 35, 41, 0.9);
+    padding: 1em;
+    color:white;
+}
+
+.Footer p{
+    font-size: small;
+}
+
+.Footer .siteName{
+    font-size: medium;
+}

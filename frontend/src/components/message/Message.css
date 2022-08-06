@@ -1,0 +1,50 @@
+.message {
+    width: 100%;
+    /* color: white; */
+}
+
+.message__sender {
+    font-size: x-small;
+    color:grey;
+    overflow-wrap: break-word;
+}
+
+span {
+    font-size: small;
+    overflow-wrap: break-word;
+}
+
+.message__container {
+    width: 100%;
+    padding: 0.3em 1em;
+    display: inline-block;
+}
+
+.user__message {
+    padding: 0.5em 0.7em;
+    max-width: 80%;
+    border-radius: 0.8em 0.8em 0 0.8em;
+    background-color: rgb(91, 196, 231);
+    text-align: left !important;
+    float: right;
+}
+
+.nonUser__message {
+    padding: 0.5em 0.7em;
+    max-width: 80%;
+    border-radius: 0.8em 0.8em 0 0.8em;
+    background-color: rgb(139, 209, 233);
+    text-align: left !important;
+    float: left;
+}
+
+
+@media(min-width: 500px){
+    .message__sender {
+        font-size: smaller;
+    }
+    
+    span {
+        font-size: medium;
+    }
+}

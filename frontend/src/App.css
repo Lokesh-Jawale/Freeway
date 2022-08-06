@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+}
+
+.App{
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* background-image: url(./images/digital.jpg); */
+    /* backdrop-filter: blur(100px) !important; */
+    /* background-image: linear-gradient(to right top, rgb(94, 220, 255), rgb(87, 255, 174))  !important; */
+
+    background-color: rgba(255, 255, 255, 0.1)  !important;
+}
+
